@@ -1,18 +1,12 @@
-function steps(n) {
-    let result = "";
-    
-     for(let row = 0; row < n; row++){
-       let stair = '';
-
-       for(let column = 0; column < n; column++){
-           if(column <= row){
-               stair += '#';
-           } else {
-               stair += " ";
-           }
-       }
-       console.log(stair);
-     }
+function printNumber(n) {
+if(n <= 0){
+  return
+} else {
+  n - 1;
+  console.log(n);
+  printNumber(n - 1);
 }
 
-steps(4);
+}
+
+printNumber(10);
